@@ -1,3 +1,5 @@
 import { AppRegistry } from 'react-native';
 import App from './App';
-AppRegistry.registerComponent('shareplaces', () => App);
+import SeatAvailability from './components/SeatAvailability';
+
+AppRegistry.registerComponent('shareplaces', () => SeatAvailability);

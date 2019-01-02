@@ -5,7 +5,11 @@ import {
   View, 
   StatusBar,
   Image ,Button,Alert,ScrollView} from 'react-native';
+
 import Tiles from './components/Tiles';
+
+
+
 
 export default class App extends React.Component {
   constructor(){
@@ -33,6 +37,7 @@ export default class App extends React.Component {
               <View style={styles.content}>
                 
                 {dashbard}
+                
               </View>
               <View style={styles.footer}>
               
@@ -70,7 +75,11 @@ header:{
 },
 content:{
   flex:5,
+  flexDirection:'row',
+  flexWrap:'wrap',
+  padding:5,
   backgroundColor:'#ffffff',
+  
   
 },
 footer:{

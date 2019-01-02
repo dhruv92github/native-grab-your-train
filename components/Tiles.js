@@ -4,7 +4,9 @@ import {
   Text, 
   View, 
   StatusBar,
+  Dimensions,
   Image ,Button,Alert,ScrollView} from 'react-native';
+
 
 
 export default class Tiles extends React.Component {
@@ -19,24 +21,32 @@ export default class Tiles extends React.Component {
     );
   }
 }
-
+var width=Dimensions.get('window').width;
 const styles = StyleSheet.create({
     tileContainer: {
-        marginTop:10,
+      
+        width:width/2-20,
+        height:100,
+        margin:5,
         backgroundColor:'#ffff',
-        fontSize:18,
-        borderColor:'black',
-        borderRadius:4,
-        borderWidth:1,
-        paddingTop:10,
-        paddingBottom:10,
-        paddingLeft:10
+        
+        borderColor:'#ad1457',
+        borderRadius:15,
+        borderWidth:2,
+        padding:10,
+        justifyContent:'center',
+        alignItems:'center',
+       
+        
         
         
     
   },
   name:{
-      color:"#000000"
+      color:"#ad1457",
+      fontWeight:'bold',
+      fontSize:15,
+      
   }
 
 
